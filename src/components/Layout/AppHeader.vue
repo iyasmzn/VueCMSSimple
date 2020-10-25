@@ -7,6 +7,7 @@
       >
     </nav>
     <hr />
+    <hr />
   </div>
 </template>
 
