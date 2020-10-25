@@ -103,10 +103,14 @@ export default {
       this.form = initialForm();
     },
     onEdit() {
-      const index = this.articles.findIndex(
+      const newArticle = [...this.articles];
+      const index = newArticle.findIndex(
         (article) => article.id == this.form.id
       );
-      this.article[index] = this.form;
+      newArticle[index] = Object.assign({}, this.form);
+      this.articles = newArticle;
+      this.isEdit = false;
+      this.form = initialForm();
     },
     editData(id) {
       const data = this.articles.find((article) => article.id == id);
