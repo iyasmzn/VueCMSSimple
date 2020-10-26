@@ -2,7 +2,7 @@
   <div>
     <hr />
     <h2>{{ article.title }}</h2>
-    <h2>{{ article.exerpt }}</h2>
+    <h2>{{ article.content }}</h2>
     <router-link to="/detail">Read more >></router-link>
     <hr />
   </div>
